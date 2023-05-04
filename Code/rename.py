@@ -2,8 +2,7 @@ import os
 from natsort import natsorted
 os.getcwd()
 
-collection = "../Training data/parts/parts/masks"
-keyword = "class"
+collection = "D:/Documents/Masters/Spring 2023/Deep Learning/DL Project/Git/DL-Project/Training data/instrument/train/raw"
+
 for i,filename in enumerate(natsorted(os.listdir(collection))):
-    if keyword in filename:
-        os.rename(collection + "/" + filename, collection + "/" + str(i) + "_class.png")
+    os.rename(collection + "/" + filename, collection + "/" + str(i) + ".png")
